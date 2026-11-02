@@ -1,0 +1,1717 @@
+{
+  "users": [
+    {
+      "id": "user-student-01",
+      "name": "Shrikrushn Bhise",
+      "email": "shrikrushn.btech23@alliance.edu.in",
+      "universityId": "AU-2023-BTECH-0482",
+      "departmentId": "dept-cse",
+      "department": "Computer Science & Engineering",
+      "role": "student",
+      "accountStatus": "Active",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80",
+      "title": "B.Tech CSE Student & Full-Stack Specialist",
+      "createdAt": "2023-08-15"
+    },
+    {
+      "id": "user-organizer-01",
+      "name": "Aditi Sharma",
+      "email": "aditi.ecell@alliance.edu.in",
+      "universityId": "AU-2022-BBA-0194",
+      "departmentId": "dept-business",
+      "department": "Alliance School of Business",
+      "role": "organizer",
+      "accountStatus": "Active",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=256&q=80",
+      "title": "Lead Convener · E-Cell Alliance & Cultural Syndicate",
+      "createdAt": "2022-09-01"
+    },
+    {
+      "id": "user-faculty-01",
+      "name": "Dr. Maya Sengupta",
+      "email": "maya.sengupta@alliance.edu.in",
+      "universityId": "AU-FAC-2019-032",
+      "departmentId": "dept-humanities",
+      "department": "School of Liberal Arts & Humanities",
+      "role": "faculty",
+      "accountStatus": "Active",
+      "avatar": "https://images.unsplash.com/photo-1580894732454-defa563b7696?auto=format&fit=crop&w=256&q=80",
+      "title": "Associate Professor & Student Development Chair",
+      "createdAt": "2019-06-10"
+    },
+    {
+      "id": "user-admin-01",
+      "name": "Prof. Rajeshwara Rao",
+      "email": "rajeshwara.rao@alliance.edu.in",
+      "universityId": "AU-ADM-2015-001",
+      "departmentId": "dept-admin",
+      "department": "Office of the Vice Chancellor & Dean of Academic Affairs",
+      "role": "admin",
+      "accountStatus": "Active",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80",
+      "title": "Dean of Academic Affairs & Platform Controller",
+      "createdAt": "2015-04-01"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-cse",
+      "name": "Computer Science & Engineering",
+      "code": "CSE",
+      "facultyCoordinatorId": "user-faculty-01",
+      "facultyCoordinatorName": "Dr. K.S. Murthy",
+      "activeOpportunitiesCount": 8,
+      "activeEventsCount": 6
+    },
+    {
+      "id": "dept-business",
+      "name": "Alliance School of Business",
+      "code": "ASOB",
+      "facultyCoordinatorId": "user-faculty-01",
+      "facultyCoordinatorName": "Prof. Ananya Roy",
+      "activeOpportunitiesCount": 5,
+      "activeEventsCount": 4
+    },
+    {
+      "id": "dept-law",
+      "name": "Alliance School of Law",
+      "code": "ASOL",
+      "facultyCoordinatorId": "user-faculty-01",
+      "facultyCoordinatorName": "Dr. Vikramaditya Prasad",
+      "activeOpportunitiesCount": 3,
+      "activeEventsCount": 2
+    },
+    {
+      "id": "dept-humanities",
+      "name": "School of Liberal Arts & Humanities",
+      "code": "SLAH",
+      "facultyCoordinatorId": "user-faculty-01",
+      "facultyCoordinatorName": "Dr. Maya Sengupta",
+      "activeOpportunitiesCount": 4,
+      "activeEventsCount": 5
+    },
+    {
+      "id": "dept-aero",
+      "name": "Department of Aerospace Engineering",
+      "code": "AERO",
+      "facultyCoordinatorId": "user-faculty-01",
+      "facultyCoordinatorName": "Dr. Sharan Kumar",
+      "activeOpportunitiesCount": 3,
+      "activeEventsCount": 2
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "opp-1",
+      "title": "Alliance National Innovation Hackathon 2026",
+      "organizer": "Centre for Innovation & Incubation (CII)",
+      "organizerType": "University Department",
+      "verified": true,
+      "category": "Hackathons",
+      "mode": "In-Person",
+      "location": "Alliance University Central Campus, Bengaluru",
+      "department": "Cross-Disciplinary",
+      "deadline": "2026-11-20",
+      "eventDate": "2026-11-28 — 2026-11-30",
+      "stipendOrPrize": "₹3,50,000 Prize Pool + Seed Grants",
+      "description": "Alliance University's flagship 36-hour hackathon focused on Smart Cities, Sustainable Energy, and Generative AI for Higher Education. 40 short-listed teams receive mentorship from top Bengaluru founders and VC investors.",
+      "responsibilities": [
+        "Build a working proof-of-concept prototype within 36 consecutive hours",
+        "Pitch live before an industry jury including tech executives and venture capitalists",
+        "Demonstrate scalable architectural thinking and user-centric design"
+      ],
+      "eligibility": "Open to all undergraduate and postgraduate students from any recognized university. Teams of 2 to 4 members.",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Python",
+        "React",
+        "Machine Learning",
+        "API Development"
+      ],
+      "preferredSkills": [
+        "Docker",
+        "FastAPI",
+        "UI/UX Design"
+      ],
+      "externalUrl": "https://hackathon.alliance.edu.in",
+      "featured": true,
+      "totalApplicants": 184,
+      "openSpots": 40,
+      "contactEmail": "cii@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Machine Learning",
+          "resourceName": "Alliance ML Lab: PyTorch & Scikit-Learn Fast Track",
+          "resourceType": "University Repository",
+          "url": "https://github.com/alliance-ai-lab/ml-essentials",
+          "estimatedHours": 8
+        },
+        {
+          "skill": "API Development",
+          "resourceName": "Production REST & Async APIs with FastAPI",
+          "resourceType": "Interactive Lab",
+          "url": "https://fastapi.tiangolo.com/tutorial/",
+          "estimatedHours": 6
+        }
+      ]
+    },
+    {
+      "id": "opp-2",
+      "title": "Autonomous Drone Navigation Research Fellow",
+      "organizer": "Aerospace & Robotics Research Laboratory",
+      "organizerType": "Research Lab",
+      "verified": true,
+      "category": "Research",
+      "mode": "In-Person",
+      "location": "Aero Lab 3, Anekal Campus",
+      "department": "Alliance College of Engineering & Design",
+      "deadline": "2026-11-15",
+      "eventDate": "Semester Project (6 Months)",
+      "stipendOrPrize": "₹18,000 / month + Co-Authorship",
+      "description": "Undergraduate research fellow position investigating vision-language-action (VLA) navigation algorithms for indoor GPS-denied environments using lightweight edge compute platforms.",
+      "responsibilities": [
+        "Implement real-time SLAM algorithms on Jetson Orin Nano modules",
+        "Conduct controlled indoor flight tests in the UAV cage facility",
+        "Co-author research manuscript for submission to IEEE IROS / ICRA"
+      ],
+      "eligibility": "3rd or 4th Year B.Tech CSE, ECE, or Aerospace with minimum CGPA 8.0 and strong mathematical foundations.",
+      "eligibleDepartments": [
+        "Computer Science & Engineering",
+        "Aerospace Engineering",
+        "Electronics & Communication"
+      ],
+      "eligibleYears": [
+        "3rd Year",
+        "4th Year"
+      ],
+      "requiredSkills": [
+        "Python",
+        "PyTorch",
+        "ROS2",
+        "Computer Vision"
+      ],
+      "preferredSkills": [
+        "C++",
+        "Linux",
+        "Mathematics"
+      ],
+      "externalUrl": "https://aerolab.alliance.edu.in/fellowship",
+      "featured": true,
+      "totalApplicants": 36,
+      "openSpots": 2,
+      "contactEmail": "robotics-lab@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "ROS2",
+          "resourceName": "ROS2 Humble Fundamentals for Autonomous Systems",
+          "resourceType": "Documentation",
+          "url": "https://docs.ros.org/en/humble/",
+          "estimatedHours": 12
+        },
+        {
+          "skill": "Computer Vision",
+          "resourceName": "OpenCV & YOLOv8 Real-Time Detection Sandbox",
+          "resourceType": "Interactive Lab",
+          "url": "https://opencv.org/university/",
+          "estimatedHours": 10
+        }
+      ]
+    },
+    {
+      "id": "opp-3",
+      "title": "FinTech Platform Engineering Internship",
+      "organizer": "Zerodha Technology Labs (Partner Program)",
+      "organizerType": "Industry Partner",
+      "verified": true,
+      "category": "Internships",
+      "mode": "Hybrid",
+      "location": "Bengaluru / Alliance Incubation Wing",
+      "department": "Alliance School of Business & Engineering",
+      "deadline": "2026-11-25",
+      "eventDate": "Jan 2027 — June 2027",
+      "stipendOrPrize": "₹45,000 / month + PPO Opportunity",
+      "description": "Work directly alongside core platform architects building low-latency order routing services, WebSocket market streams, and reactive customer analytics dashboards.",
+      "responsibilities": [
+        "Write clean, test-driven Go or Python microservices with high concurrent throughput",
+        "Build responsive frontend interfaces with TypeScript, React, and Tailwind CSS",
+        "Optimize database queries and indexing patterns in PostgreSQL"
+      ],
+      "eligibility": "Pre-final and Final year B.Tech/BBA/MBA students with demonstrated software engineering portfolio.",
+      "eligibleDepartments": [
+        "Computer Science & Engineering",
+        "Alliance School of Business"
+      ],
+      "eligibleYears": [
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "FastAPI"
+      ],
+      "preferredSkills": [
+        "Go",
+        "Docker",
+        "Redis",
+        "Kafka"
+      ],
+      "externalUrl": "https://careers.zerodha.com/campus-alliance",
+      "featured": true,
+      "totalApplicants": 142,
+      "openSpots": 5,
+      "contactEmail": "campus-hiring@zerodhalabs.com",
+      "learningRoadmap": [
+        {
+          "skill": "PostgreSQL",
+          "resourceName": "Advanced SQL Query Optimization & Partitioning",
+          "resourceType": "Interactive Lab",
+          "url": "https://use-the-index-luke.com/",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "opp-4",
+      "title": "Alliance Venture Studio Pitch Competition 2026",
+      "organizer": "Alliance School of Business — E-Cell",
+      "organizerType": "Student Club",
+      "verified": true,
+      "category": "Entrepreneurship",
+      "mode": "In-Person",
+      "location": "Auditorium 1, Learning Centre",
+      "department": "Alliance School of Business",
+      "deadline": "2026-11-18",
+      "eventDate": "2026-12-05",
+      "stipendOrPrize": "₹5,00,000 Incubation Grant",
+      "description": "Annual flagship student startup pitch challenge. Selected student founders receive 8 weeks of mentorship, prototype grants, legal registration support, and investor introductions.",
+      "responsibilities": [
+        "Submit comprehensive 10-slide pitch deck covering problem, market, and unit economics",
+        "Deliver 5-minute live demo and presentation to angel syndicate",
+        "Commit to MVP deployment on Alliance campus within 90 days of selection"
+      ],
+      "eligibility": "Any enrolled Alliance University student team with at least 1 technical co-founder and 1 business co-founder.",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Business Modeling",
+        "Product Strategy",
+        "UI/UX Design",
+        "Financial Projections"
+      ],
+      "preferredSkills": [
+        "Pitching",
+        "Market Research"
+      ],
+      "externalUrl": "https://ecell.alliance.edu.in/pitch-2026",
+      "featured": false,
+      "totalApplicants": 78,
+      "openSpots": 12,
+      "contactEmail": "ecell@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Business Modeling",
+          "resourceName": "Y-Combinator Startup School: Market Sizing & Unit Economics",
+          "resourceType": "Video Masterclass",
+          "url": "https://startupschool.org",
+          "estimatedHours": 6
+        }
+      ]
+    },
+    {
+      "id": "opp-5",
+      "title": "Generative AI & LLM Systems Hands-on Masterclass",
+      "organizer": "Alliance Developer Student Club & Google Cloud Campus",
+      "organizerType": "Student Club",
+      "verified": true,
+      "category": "Workshops",
+      "mode": "Hybrid",
+      "location": "Computer Lab 4 & YouTube Live Stream",
+      "department": "Department of Computer Science & Engineering",
+      "deadline": "2026-11-10",
+      "eventDate": "2026-11-12 (Saturday 10:00 AM)",
+      "stipendOrPrize": "Official Certificate + $100 Cloud Credits",
+      "description": "Intensive full-day workshop on building production RAG pipelines, fine-tuning quantized open-weights models, and deploying low-latency agentic loops using modern TypeScript and Python SDKs.",
+      "responsibilities": [
+        "Bring laptop with Docker and VS Code pre-installed",
+        "Complete 3 guided coding assignments during the live lab sessions",
+        "Deploy a working multi-agent assistant by end of day"
+      ],
+      "eligibility": "Open to all students with basic Python or JavaScript knowledge.",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Python",
+        "Machine Learning",
+        "API Development"
+      ],
+      "preferredSkills": [
+        "Docker",
+        "PyTorch"
+      ],
+      "externalUrl": "https://adsc.alliance.edu.in/workshops/genai",
+      "featured": false,
+      "totalApplicants": 290,
+      "openSpots": 100,
+      "contactEmail": "dsc@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Machine Learning",
+          "resourceName": "Vector Embeddings & Retrieval Fundamentals",
+          "resourceType": "Documentation",
+          "url": "https://huggingface.co/learn/nlp-course",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "opp-6",
+      "title": "Inter-Collegiate Cyber Defense CTF Challenge",
+      "organizer": "Alliance Cyber Security & Ethical Hacking Guild",
+      "organizerType": "Student Club",
+      "verified": true,
+      "category": "Technical Competitions",
+      "mode": "Virtual",
+      "location": "Alliance CTF CyberRange (Online)",
+      "department": "Alliance College of Engineering & Design",
+      "deadline": "2026-11-22",
+      "eventDate": "2026-11-24 (24-Hour CTF)",
+      "stipendOrPrize": "₹1,00,000 + Bug Bounty Badges",
+      "description": "Capture-the-flag competition covering binary exploitation, web security (OWASP Top 10), reverse engineering, cryptography, and digital forensics. Designed for novice to advanced ethical hackers.",
+      "responsibilities": [
+        "Solve time-locked vulnerability puzzles across 5 security tracks",
+        "Submit verifiable cryptographic flags to the automated scoreboard",
+        "Comply with strict competitive ethics and non-interference rules"
+      ],
+      "eligibility": "All Alliance students. Individual or team registrations (up to 3 members).",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Linux",
+        "Network Security",
+        "Python",
+        "Cryptography"
+      ],
+      "preferredSkills": [
+        "Web Security",
+        "Reverse Engineering"
+      ],
+      "externalUrl": "https://ctf.alliance.edu.in",
+      "featured": false,
+      "totalApplicants": 95,
+      "openSpots": 60,
+      "contactEmail": "cybersec@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Network Security",
+          "resourceName": "OWASP Web Security Testing Guide & Burp Suite Basics",
+          "resourceType": "Interactive Lab",
+          "url": "https://portswigger.net/web-security",
+          "estimatedHours": 8
+        }
+      ]
+    },
+    {
+      "id": "opp-7",
+      "title": "Smart Campus IoT Sustainability Grant",
+      "organizer": "Dean of Research & Sustainability Cell",
+      "organizerType": "University Department",
+      "verified": true,
+      "category": "Research",
+      "mode": "In-Person",
+      "location": "Green Energy Lab, Engineering Block B",
+      "department": "Cross-Disciplinary",
+      "deadline": "2026-11-30",
+      "eventDate": "Spring Semester 2027",
+      "stipendOrPrize": "₹1,50,000 Hardware Grant + Lab Access",
+      "description": "Research grant to design and deploy real-time solar yield trackers, rainwater harvesting water-level telemetry, and smart cafeteria food-waste audit systems across the 55-acre campus.",
+      "responsibilities": [
+        "Design low-power LoRaWAN sensor nodes with solar recharge capability",
+        "Deploy live telemetry dashboard accessible by campus facilities teams",
+        "Present mid-term progress report to the University Green Committee"
+      ],
+      "eligibility": "Interdisciplinary teams of 3 to 5 students containing members from both Engineering and Management/Design.",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "2nd Year",
+        "3rd Year",
+        "4th Year"
+      ],
+      "requiredSkills": [
+        "Embedded Systems",
+        "IoT",
+        "Python",
+        "React"
+      ],
+      "preferredSkills": [
+        "C++",
+        "UI/UX Design",
+        "PostgreSQL"
+      ],
+      "externalUrl": "https://research.alliance.edu.in/green-grant",
+      "featured": false,
+      "totalApplicants": 44,
+      "openSpots": 3,
+      "contactEmail": "sustainability@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "IoT",
+          "resourceName": "LoRaWAN Sensor Design & MQTT Telemetry Pipelines",
+          "resourceType": "Documentation",
+          "url": "https://www.thethingsnetwork.org/docs/",
+          "estimatedHours": 7
+        }
+      ]
+    },
+    {
+      "id": "opp-8",
+      "title": "Alliance National Constitutional Law Moot Court",
+      "organizer": "Alliance School of Law Moot Court Society",
+      "organizerType": "Student Club",
+      "verified": true,
+      "category": "University Events",
+      "mode": "In-Person",
+      "location": "Moot Court Hall, Alliance School of Law",
+      "department": "Alliance School of Law",
+      "deadline": "2026-11-14",
+      "eventDate": "2026-12-10 — 2026-12-12",
+      "stipendOrPrize": "₹2,00,000 + Judicial Clerkship Recommendation",
+      "description": "Prestigious national moot court competition arguing emerging constitutional issues surrounding AI copyright liability, algorithmic bias, and digital privacy jurisprudence.",
+      "responsibilities": [
+        "Draft formal petitioner and respondent memorial submissions",
+        "Argue before panels comprising sitting and retired High Court judges",
+        "Demonstrate rigorous legal research and authoritative citation methodology"
+      ],
+      "eligibility": "Strictly restricted to students currently pursuing 3-Year or 5-Year LL.B. degrees at Alliance School of Law or recognized law faculties.",
+      "eligibleDepartments": [
+        "Alliance School of Law"
+      ],
+      "eligibleYears": [
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Legal Research",
+        "Oral Advocacy",
+        "Constitutional Law",
+        "Brief Writing"
+      ],
+      "preferredSkills": [
+        "Intellectual Property Law"
+      ],
+      "externalUrl": "https://law.alliance.edu.in/moot-2026",
+      "featured": false,
+      "totalApplicants": 62,
+      "openSpots": 24,
+      "contactEmail": "mootcourt@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Legal Research",
+          "resourceName": "SCC Online & Manupatra Advanced Search Techniques",
+          "resourceType": "Documentation",
+          "url": "https://www.scconline.com",
+          "estimatedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "opp-9",
+      "title": "Cloud DevOps & Kubernetes Certification Cohort",
+      "organizer": "Alliance Information Technology Services (AITS)",
+      "organizerType": "University Department",
+      "verified": true,
+      "category": "Certifications",
+      "mode": "Hybrid",
+      "location": "Cloud Learning Portal & Weekly Labs",
+      "department": "Alliance College of Engineering & Design",
+      "deadline": "2026-11-28",
+      "eventDate": "December 2026 (4-Week Intensive)",
+      "stipendOrPrize": "100% Exam Voucher Sponsor (CKA / AWS SAA)",
+      "description": "Sponsored training cohort preparing 50 dedicated students for Certified Kubernetes Administrator (CKA) or AWS Certified Solutions Architect. Includes hands-on sandbox clusters and weekly instructor office hours.",
+      "responsibilities": [
+        "Complete 8 container orchestration lab exercises in the AITS Kubernetes cluster",
+        "Maintain 90% attendance across weekend live architecture deep dives",
+        "Sit for official certification exam by January 15, 2027"
+      ],
+      "eligibility": "All 2nd, 3rd, and 4th year students with foundational Linux command-line literacy.",
+      "eligibleDepartments": [
+        "Computer Science & Engineering",
+        "Alliance College of Engineering & Design"
+      ],
+      "eligibleYears": [
+        "2nd Year",
+        "3rd Year",
+        "4th Year"
+      ],
+      "requiredSkills": [
+        "Linux",
+        "Docker",
+        "Networking"
+      ],
+      "preferredSkills": [
+        "Kubernetes",
+        "CI/CD Pipelines"
+      ],
+      "externalUrl": "https://aits.alliance.edu.in/certs/k8s",
+      "featured": false,
+      "totalApplicants": 110,
+      "openSpots": 50,
+      "contactEmail": "certifications@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Docker",
+          "resourceName": "Docker Mastery: From Containers to Swarm & Compose",
+          "resourceType": "Interactive Lab",
+          "url": "https://docker-curriculum.com/",
+          "estimatedHours": 6
+        }
+      ]
+    },
+    {
+      "id": "opp-10",
+      "title": "UI/UX Design Sprint: Campus Services Redesign",
+      "organizer": "Alliance Design Guild & Product Club",
+      "organizerType": "Student Club",
+      "verified": true,
+      "category": "Workshops",
+      "mode": "In-Person",
+      "location": "Design Studio Lab, School of Liberal Arts & Humanities",
+      "department": "Cross-Disciplinary",
+      "deadline": "2026-11-16",
+      "eventDate": "2026-11-19 (3-Day Sprint)",
+      "stipendOrPrize": "₹50,000 + Production Implementation on Campus Portal",
+      "description": "Collaborative 3-day product design sprint tackling actual student pain points: library book reservations, dining hall menus, and gym slots. Winning design system will be implemented directly into the official university portal.",
+      "responsibilities": [
+        "Conduct user interviews with at least 15 fellow students and faculty members",
+        "Build clickable, accessible Figma prototypes adhering to WCAG AA guidelines",
+        "Document a complete tokenized design system component library"
+      ],
+      "eligibility": "Open to students of all years and majors. Beginners with enthusiasm are welcomed.",
+      "eligibleDepartments": [
+        "All Departments"
+      ],
+      "eligibleYears": [
+        "1st Year",
+        "2nd Year",
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "UI/UX Design",
+        "Figma",
+        "User Research",
+        "Design Systems"
+      ],
+      "preferredSkills": [
+        "Prototyping",
+        "Tailwind CSS"
+      ],
+      "externalUrl": "https://design.alliance.edu.in/sprint-2026",
+      "featured": false,
+      "totalApplicants": 88,
+      "openSpots": 30,
+      "contactEmail": "design-guild@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "UI/UX Design",
+          "resourceName": "Refactoring UI: Practical UI Design Tactics",
+          "resourceType": "Documentation",
+          "url": "https://refactoringui.com",
+          "estimatedHours": 5
+        }
+      ]
+    },
+    {
+      "id": "opp-11",
+      "title": "Deep Learning for Medical Imaging Fellowship",
+      "organizer": "Bio-Informatics Research Cell & Narayana Health Collaboration",
+      "organizerType": "Research Lab",
+      "verified": true,
+      "category": "Research",
+      "mode": "Hybrid",
+      "location": "Bio-AI Lab, Central Campus / Narayana Health City",
+      "department": "Department of Computer Science & Engineering",
+      "deadline": "2026-12-01",
+      "eventDate": "Spring Semester 2027",
+      "stipendOrPrize": "₹22,000 / month Fellowship",
+      "description": "Develop transformer-based segmentation models for automated detection of early-stage diabetic retinopathy on multi-spectral retinal fundus scans in collaboration with clinical ophthalmologists.",
+      "responsibilities": [
+        "Pre-process and augment clinical DICOM and TIFF retinal imagery",
+        "Train vision transformers (ViT) and validate sensitivity/specificity metrics",
+        "Prepare quarterly benchmark results for clinical audit boards"
+      ],
+      "eligibility": "Pre-final or postgraduate students with proven PyTorch proficiency and strong linear algebra/statistics background.",
+      "eligibleDepartments": [
+        "Computer Science & Engineering",
+        "Biotechnology"
+      ],
+      "eligibleYears": [
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Python",
+        "PyTorch",
+        "Machine Learning",
+        "Computer Vision"
+      ],
+      "preferredSkills": [
+        "Medical Imaging",
+        "Docker",
+        "Linux"
+      ],
+      "externalUrl": "https://bioai.alliance.edu.in/fellowship",
+      "featured": false,
+      "totalApplicants": 31,
+      "openSpots": 2,
+      "contactEmail": "bioai@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "PyTorch",
+          "resourceName": "PyTorch for Deep Learning & Vision Transformers",
+          "resourceType": "Documentation",
+          "url": "https://pytorch.org/tutorials/",
+          "estimatedHours": 8
+        }
+      ]
+    },
+    {
+      "id": "opp-12",
+      "title": "Product Management Fellowship: Campus EdTech",
+      "organizer": "Alliance Digital Transformation Office",
+      "organizerType": "University Department",
+      "verified": true,
+      "category": "Internships",
+      "mode": "In-Person",
+      "location": "Vice Chancellor Office Wing, Central Campus",
+      "department": "Alliance School of Business",
+      "deadline": "2026-11-21",
+      "eventDate": "Dec 2026 — May 2027",
+      "stipendOrPrize": "₹20,000 / month + Leadership Certificate",
+      "description": "Work closely with academic leadership to define roadmaps, write technical PRDs, and measure student engagement for digital classroom tools, exam schedules, and attendance automation.",
+      "responsibilities": [
+        "Author PRDs with user stories, acceptance criteria, and metric definitions",
+        "Run weekly sprint triage and feature roadmapping with student dev teams",
+        "Track monthly active student usage and synthesize feedback survey findings"
+      ],
+      "eligibility": "BBA, MBA, or B.Tech 3rd/4th year students with demonstrated product thinking and analytical communication skills.",
+      "eligibleDepartments": [
+        "Alliance School of Business",
+        "Computer Science & Engineering"
+      ],
+      "eligibleYears": [
+        "3rd Year",
+        "4th Year",
+        "Postgraduate"
+      ],
+      "requiredSkills": [
+        "Product Strategy",
+        "User Research",
+        "Data Analysis",
+        "Agile/Scrum"
+      ],
+      "preferredSkills": [
+        "UI/UX Design",
+        "SQL"
+      ],
+      "externalUrl": "https://digital.alliance.edu.in/pm-fellows",
+      "featured": false,
+      "totalApplicants": 65,
+      "openSpots": 2,
+      "contactEmail": "dto@alliance.edu.in",
+      "learningRoadmap": [
+        {
+          "skill": "Product Strategy",
+          "resourceName": "Lenny's Product Management Playbook & PRD Templates",
+          "resourceType": "Video Masterclass",
+          "url": "https://www.lennysnewsletter.com",
+          "estimatedHours": 5
+        }
+      ]
+    }
+  ],
+  "festivals": [
+    {
+      "id": "fest-alliance-one",
+      "title": "Alliance ONE 2026",
+      "slug": "alliance-one",
+      "tagline": "The Flagship Annual University Mega-Festival",
+      "theme": "Nexus of Horizons: Convergence of Art, Code & Kinetic Energy",
+      "description": "Alliance ONE is the definitive annual collegiate festival of Alliance University, uniting over 8,000 students across engineering, business, law, liberal arts, and science. Over three electrifying days, the campus transforms into a vibrant hub of national-level technical competitions, pro-nites, cultural showdowns, and inter-collegiate sports battles.",
+      "heroImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1600&q=80",
+      "organizer": "Department of Student Affairs & Student Senate",
+      "organizerDepartment": "Office of Campus Life & Cultural Affairs",
+      "startDate": "2026-04-16",
+      "endDate": "2026-04-18",
+      "venue": "Central Amphitheatre, Sports Complex & Innovation Arena, Anekal Main Campus",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "featured": true,
+      "expectedAttendees": 8500,
+      "participatingClubs": [
+        "Alliance Cultural Committee",
+        "Rotaract Club of Alliance",
+        "Music & Performing Arts Society",
+        "IEEE Student Branch",
+        "Sports & Athletics Council",
+        "E-Cell Alliance"
+      ],
+      "scheduleHighlights": [
+        {
+          "day": "Day 1 (Apr 16)",
+          "title": "Grand Inauguration & Thematic Prelims",
+          "time": "09:30 AM - 09:00 PM",
+          "description": "Chancellor address, torch lighting ceremony, Western & Eastern dance preliminaries, and 24-hour Midnight Hack-a-Sprint kick-off.",
+          "venue": "Central Amphitheatre & Edison Computing Labs"
+        },
+        {
+          "day": "Day 2 (Apr 17)",
+          "title": "National Battle of Bands & Tech Arena Finals",
+          "time": "10:00 AM - 10:30 PM",
+          "description": "Inter-university rock band clash, Robowars arena elimination bouts, and high-energy street dance battles.",
+          "venue": "Sports Pavilion & Open-Air Amphitheatre"
+        },
+        {
+          "day": "Day 3 (Apr 18)",
+          "title": "Celebrity Pro-Nite, Prize Gala & Valedictory",
+          "time": "04:00 PM - 11:00 PM",
+          "description": "Grand award distribution of the ₹6,00,000 festival trophy pool followed by an exclusive headline musical performance.",
+          "venue": "Main University Stadium Grounds"
+        }
+      ],
+      "announcements": [
+        {
+          "id": "ann-1",
+          "festivalId": "fest-alliance-one",
+          "title": "Battle of the Bands Slot Submissions Extended",
+          "description": "Due to overwhelming entries from across Bengaluru universities, band video submission deadline is extended to April 10 at 6:00 PM.",
+          "publishedAt": "2026-04-02",
+          "priority": "High",
+          "author": "Cultural Council Coordinator"
+        },
+        {
+          "id": "ann-2",
+          "festivalId": "fest-alliance-one",
+          "title": "Midnight Hack-a-Sprint Cloud Credits Dispatched",
+          "description": "All 60 shortlisted developer squads have been sent AWS and Gemini API test credentials via registered Alliance University student email.",
+          "publishedAt": "2026-04-04",
+          "priority": "Normal",
+          "author": "AITS Technical Lead"
+        }
+      ]
+    },
+    {
+      "id": "fest-alf-2026",
+      "title": "ALF — Alliance Literature Festival 2026",
+      "slug": "alf",
+      "tagline": "World Ideas, Provocative Thought & Creative Expression",
+      "theme": "Words in Motion: Narrative Power in the Age of Synthetic Intelligence",
+      "description": "The Alliance Literature Festival (ALF) stands as one of India’s premier academic literary celebrations, convening international Booker-winning authors, historians, investigative journalists, poet laureates, and student debaters under the green canopy of Alliance University.",
+      "heroImage": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=80",
+      "organizer": "School of Liberal Arts & Humanities",
+      "organizerDepartment": "Department of Languages & Creative Writing",
+      "startDate": "2026-05-08",
+      "endDate": "2026-05-10",
+      "venue": "Green Amphitheatre, B-School Gazebos & Dr. C.G. Auditorium",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "featured": true,
+      "expectedAttendees": 4200,
+      "participatingClubs": [
+        "Alliance Literary Society",
+        "The Oratory Club",
+        "Philosophy & Cinema Circle",
+        "Booker Reading Circle"
+      ],
+      "scheduleHighlights": [
+        {
+          "day": "Day 1 (May 8)",
+          "title": "Keynote Discourse: The Architecture of Memory",
+          "time": "10:00 AM - 05:00 PM",
+          "description": "Opening panel with celebrated essayists and debate preliminaries on algorithmic literature.",
+          "venue": "Green Amphitheatre"
+        },
+        {
+          "day": "Day 2 (May 9)",
+          "title": "Spoken Word Gala & Authors Guild Salon",
+          "time": "11:00 AM - 07:30 PM",
+          "description": "National collegiate poetry slam, indie book launches, and masterclass on literary translation.",
+          "venue": "Library Central Quadrangle"
+        },
+        {
+          "day": "Day 3 (May 10)",
+          "title": "The Great Parliamentary Debate Finals",
+          "time": "10:30 AM - 04:00 PM",
+          "description": "Oxford-style debating championship followed by the valedictory address and student anthology release.",
+          "venue": "Dr. C.G. Auditorium"
+        }
+      ],
+      "announcements": [
+        {
+          "id": "ann-alf-1",
+          "festivalId": "fest-alf-2026",
+          "title": "Student Anthology Submissions Open",
+          "description": "Short stories and poetry selections for the 2026 Alliance Anthology \"Ink & Silicon\" close on April 25.",
+          "publishedAt": "2026-04-01",
+          "priority": "Normal",
+          "author": "Dr. Maya Sengupta, Faculty Advisor"
+        }
+      ]
+    },
+    {
+      "id": "fest-esummit-2026",
+      "title": "Alliance E-Summit & Global Conclave 2026",
+      "slug": "e-summit",
+      "tagline": "Empowering Student Founders & Venture Builders",
+      "theme": "Zero to One: Frontier Tech, Climate Capital & Deep Scale",
+      "description": "Hosted by the Alliance Entrepreneurship Cell (E-Cell) and the Incubation Center, the E-Summit brings together angel investors, venture capitalists, unicorn founders, and over 1,500 collegiate innovators for two days of pitch battles, product teardowns, and venture creation.",
+      "heroImage": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1600&q=80",
+      "organizer": "E-Cell Alliance & Alliance Innovation Hub",
+      "organizerDepartment": "Alliance School of Business",
+      "startDate": "2026-04-24",
+      "endDate": "2026-04-25",
+      "venue": "Executive Seminar Hall & Innovation Centre, B-School Campus",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "featured": true,
+      "expectedAttendees": 2000,
+      "participatingClubs": [
+        "E-Cell Alliance",
+        "Finance & FinTech Syndicate",
+        "Alliance Consulting Club",
+        "AI Product Guild"
+      ],
+      "scheduleHighlights": [
+        {
+          "day": "Day 1 (Apr 24)",
+          "title": "Venture Keynote & Seed Pitch Prelims",
+          "time": "09:00 AM - 06:00 PM",
+          "description": "Keynotes by prominent Bengaluru tech founders and 3-minute quick pitches across 40 collegiate startups.",
+          "venue": "Executive Seminar Hall"
+        },
+        {
+          "day": "Day 2 (Apr 25)",
+          "title": "The Grand Angel Arena (Shark Tank Format)",
+          "time": "10:00 AM - 05:30 PM",
+          "description": "Top 8 finalists pitch live before institutional investors with an instant ₹5,00,000 seed grant pool.",
+          "venue": "Innovation Centre Auditorium"
+        }
+      ],
+      "announcements": [
+        {
+          "id": "ann-es-1",
+          "festivalId": "fest-esummit-2026",
+          "title": "VC Mentor Roster Revealed",
+          "description": "Partners from Blume Ventures, Peak XV Surge, and Kalaari Capital confirmed as judges for the Seed Pitch Bowl.",
+          "publishedAt": "2026-04-03",
+          "priority": "High",
+          "author": "E-Cell Convener"
+        }
+      ]
+    },
+    {
+      "id": "fest-sports-2026",
+      "title": "Chidananda Hegde Memorial Sports Fest 2026",
+      "slug": "chidananda-sports-fest",
+      "tagline": "Excellence in Motion: Annual University Athletics & Games",
+      "theme": "Resilience, Sportsmanship & Athletic Mastery",
+      "description": "The prestigious annual inter-school and inter-collegiate sports festival featuring intense competitions across Track & Field, Football, Basketball, Cricket, Badminton, Volleyball, and Table Tennis with teams competing from 40+ universities across South India.",
+      "heroImage": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80",
+      "organizer": "Department of Physical Education & Sports Council",
+      "organizerDepartment": "Directorate of Sports & Wellness",
+      "startDate": "2026-03-28",
+      "endDate": "2026-03-30",
+      "venue": "Alliance University Sports Pavilion, Olympic Standard Track & Multipurpose Courts",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "featured": false,
+      "expectedAttendees": 3000,
+      "participatingClubs": [
+        "Alliance Football Club",
+        "Athletics & Marathon Guild",
+        "Hoopers Basketball Society",
+        "Martial Arts Club"
+      ]
+    },
+    {
+      "id": "fest-techvista-2026",
+      "title": "TechVista: Computing & Engineering Symposium 2026",
+      "slug": "techvista",
+      "tagline": "Frontier Systems, Autonomous Robotics & Machine Intelligence",
+      "theme": "Beyond Silicon: Quantum, Cyber Resilience & Edge Autonomous Systems",
+      "description": "The annual flagship engineering symposium curated by Alliance College of Engineering & Design and the IEEE Student Branch, featuring state-level robotics combat, cybersecurity CTF hackathons, and research paper presentations.",
+      "heroImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
+      "organizer": "IEEE Alliance Student Branch & Robotics Club",
+      "organizerDepartment": "Alliance College of Engineering & Design",
+      "startDate": "2026-05-15",
+      "endDate": "2026-05-16",
+      "venue": "Edison Computing Block, Tech Park & Makerspace Lab",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "featured": false,
+      "expectedAttendees": 1800,
+      "participatingClubs": [
+        "IEEE Student Branch",
+        "Alliance Robotics Guild",
+        "Null Chapter Alliance (Cybersec)",
+        "Game Dev Society"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "evt-one-soundclash",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "title": "Sound Clash: National Battle of the Bands",
+      "description": "High-voltage collegiate rock, fusion, and indie bands duel on the main concert stage with full sound engineering support. Judged on originality, stage presence, and technical mastery.",
+      "category": "Cultural",
+      "startDatetime": "2026-04-17T18:00:00",
+      "endDatetime": "2026-04-17T22:00:00",
+      "venue": "Central Amphitheatre Main Stage",
+      "eligibility": "All verified undergraduate and postgraduate collegiate music bands (3-7 members).",
+      "organizer": "Alliance Cultural Committee",
+      "organizerDepartment": "Office of Campus Life",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-10",
+      "prizePool": "₹1,00,000 + Studio Recording Contract",
+      "openSpots": 12,
+      "totalRegistrations": 9,
+      "tags": [
+        "Music",
+        "Live Bands",
+        "Rock",
+        "Performance"
+      ],
+      "featured": true,
+      "coverImage": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80",
+      "rulesOrGuidelines": [
+        "Performance time slot: 15 minutes + 5 minutes sound check",
+        "Original compositions score 25% bonus points in the judging rubric",
+        "Standard 5-piece drum kit and amplifiers provided by festival sound crew"
+      ]
+    },
+    {
+      "id": "evt-one-hackasprint",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "title": "Midnight Hack-a-Sprint: 24h AI & Campus Infrastructure Build",
+      "description": "An overnight hack sprint where 60 teams build production-grade web applications, autonomous agent workflows, or university IoT solutions within 24 intense hours.",
+      "category": "Technical",
+      "startDatetime": "2026-04-16T19:00:00",
+      "endDatetime": "2026-04-17T19:00:00",
+      "venue": "Edison Innovation Lab & Advanced Computing Hall",
+      "eligibility": "Open to all Alliance University students across any department and batch.",
+      "organizer": "IEEE Student Branch & Google Developer Student Club",
+      "organizerDepartment": "Alliance College of Engineering & Design",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-12",
+      "prizePool": "₹1,50,000 + Cloud Credits & Fast-Track Internship",
+      "openSpots": 60,
+      "totalRegistrations": 48,
+      "tags": [
+        "Hackathon",
+        "AI Agents",
+        "Full-Stack",
+        "IoT"
+      ],
+      "featured": true,
+      "coverImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+      "rulesOrGuidelines": [
+        "Teams of 2 to 4 members. Cross-department teams encouraged.",
+        "All code commits must be pushed to a fresh GitHub repo during the sprint window.",
+        "Food, Red Bull, caffeine bar, and rest pods provided throughout the night."
+      ]
+    },
+    {
+      "id": "evt-one-robowars",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "title": "RoboClash: 15kg & 30kg Combat Robotics Arena",
+      "description": "Custom armored combat robots clash in a reinforced polycarbonate enclosure with spinning weapons, flippers, and wedge chassis. Knockout tournament format.",
+      "category": "Technical",
+      "startDatetime": "2026-04-17T13:00:00",
+      "endDatetime": "2026-04-17T17:00:00",
+      "venue": "Central Plaza Enclosed Battle Arena",
+      "eligibility": "College student teams with custom fabricated radio-controlled robots under 30kg.",
+      "organizer": "Alliance Robotics Guild",
+      "organizerDepartment": "Department of Mechanical & Mechatronics",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-11",
+      "prizePool": "₹75,000 + Fabrication Grants",
+      "openSpots": 16,
+      "totalRegistrations": 14,
+      "tags": [
+        "Robotics",
+        "Hardware",
+        "Combat",
+        "Mechatronics"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-one-streetball",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "title": "Alliance Slam: 3v3 Streetball Championship",
+      "description": "Fast-paced, FIBA 3x3 half-court basketball showdown under floodlights with live hip-hop beats by DJ student society.",
+      "category": "Sports",
+      "startDatetime": "2026-04-16T17:00:00",
+      "endDatetime": "2026-04-16T21:30:00",
+      "venue": "Outdoor Floodlit Basketball Courts",
+      "eligibility": "All enrolled undergraduate and postgraduate students.",
+      "organizer": "Sports & Athletics Council",
+      "organizerDepartment": "Directorate of Sports & Wellness",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-12",
+      "prizePool": "₹30,000 + Championship Medals",
+      "openSpots": 24,
+      "totalRegistrations": 20,
+      "tags": [
+        "Basketball",
+        "Sports",
+        "Streetball",
+        "Fast-Paced"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-one-verve",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "title": "Verve: Inter-School Thematic Choreography Gala",
+      "description": "Large-group Western, Indo-contemporary, and hip-hop dance teams showcase synchronization, thematic storytelling, and athletic choreography.",
+      "category": "Cultural",
+      "startDatetime": "2026-04-18T16:00:00",
+      "endDatetime": "2026-04-18T19:30:00",
+      "venue": "Central Amphitheatre Stage",
+      "eligibility": "Student dance troupes of 8 to 25 members.",
+      "organizer": "Alliance Dance & Choreography Syndicate",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-13",
+      "prizePool": "₹80,000 Trophy",
+      "openSpots": 10,
+      "totalRegistrations": 8,
+      "tags": [
+        "Dance",
+        "Choreography",
+        "Stage",
+        "Cultural"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-alf-debate",
+      "festivalId": "fest-alf-2026",
+      "festivalTitle": "ALF — Alliance Literature Festival 2026",
+      "title": "The Great Parliamentary Debate: Ethics of the Singularity",
+      "description": "British Parliamentary debating tournament examining intellectual autonomy, state regulation of foundational models, and academic ethics.",
+      "category": "Cultural",
+      "startDatetime": "2026-05-09T10:00:00",
+      "endDatetime": "2026-05-09T17:00:00",
+      "venue": "Law School Moot Court Hall 1",
+      "eligibility": "Open to all university debaters (2-person teams).",
+      "organizer": "The Oratory Club of Alliance",
+      "organizerDepartment": "School of Liberal Arts & Humanities",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-05-03",
+      "prizePool": "₹40,000 + Rolling Trophy",
+      "openSpots": 32,
+      "totalRegistrations": 24,
+      "tags": [
+        "Debate",
+        "Oratory",
+        "Parliamentary",
+        "Philosophy"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-alf-poetry",
+      "festivalId": "fest-alf-2026",
+      "festivalTitle": "ALF — Alliance Literature Festival 2026",
+      "title": "Nocturne: Under-the-Stars Poetry Slam & Spoken Word",
+      "description": "An evocative acoustic evening of original poetry in English, Hindi, Kannada, and regional languages under the fairy-lit banyan grove.",
+      "category": "Cultural",
+      "startDatetime": "2026-05-09T19:00:00",
+      "endDatetime": "2026-05-09T22:00:00",
+      "venue": "Green Amphitheatre Lawn Gazebo",
+      "eligibility": "All students and staff of Alliance University.",
+      "organizer": "Alliance Literary Society",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-05-06",
+      "prizePool": "₹20,000 + Publication in Anthology",
+      "openSpots": 25,
+      "totalRegistrations": 19,
+      "tags": [
+        "Poetry",
+        "Spoken Word",
+        "Literature",
+        "Acoustic"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-esummit-pitch",
+      "festivalId": "fest-esummit-2026",
+      "festivalTitle": "Alliance E-Summit & Global Conclave 2026",
+      "title": "The Angel Arena: Live Seed Venture Pitch Bowl",
+      "description": "Top student venture teams pitch in front of active seed investors, angel syndicate leads, and venture partners for direct grant funding and term sheet offers.",
+      "category": "Entrepreneurship",
+      "startDatetime": "2026-04-25T11:00:00",
+      "endDatetime": "2026-04-25T16:30:00",
+      "venue": "Executive Seminar Hall & Innovation Centre",
+      "eligibility": "Collegiate startup teams with a working prototype or early revenue traction.",
+      "organizer": "E-Cell Alliance",
+      "organizerDepartment": "Alliance School of Business",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-18",
+      "prizePool": "₹5,00,000 Equity-Free Seed Pool",
+      "openSpots": 15,
+      "totalRegistrations": 12,
+      "tags": [
+        "Startup",
+        "Pitch",
+        "Venture Capital",
+        "Funding"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-quantum-workshop",
+      "title": "Quantum Computing Hands-on with Qiskit & IBM Q Experience",
+      "description": "A 2-day hands-on intensive masterclass on qubit state vectors, entanglement, Grover search, and running circuits on physical superconducting quantum hardware.",
+      "category": "Workshop & Masterclass",
+      "startDatetime": "2026-04-11T09:30:00",
+      "endDatetime": "2026-04-12T16:30:00",
+      "venue": "Advanced Photonics & Quantum Lab, 3rd Floor Engineering Block",
+      "eligibility": "Linear algebra foundation and basic Python skills.",
+      "organizer": "Department of Computer Science & IBM Quantum Ambassador",
+      "organizerDepartment": "Alliance College of Engineering & Design",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-08",
+      "openSpots": 40,
+      "totalRegistrations": 38,
+      "tags": [
+        "Quantum",
+        "Python",
+        "Qiskit",
+        "Deep Tech"
+      ],
+      "featured": true,
+      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80",
+      "rulesOrGuidelines": [
+        "Bring your own laptop with Python 3.10+ installed",
+        "IBM Quantum cloud API tokens will be distributed in Session 1"
+      ]
+    },
+    {
+      "id": "evt-moot-court",
+      "title": "All-India National Environmental Law Moot Court",
+      "description": "Prestigious national moot court competition focusing on international climate treaties, loss-and-damage mechanisms, and corporate ESG compliance.",
+      "category": "Department Fest",
+      "startDatetime": "2026-04-20T09:00:00",
+      "endDatetime": "2026-04-22T18:00:00",
+      "venue": "Alliance School of Law Ceremonial Moot Court Complex",
+      "eligibility": "B.A. LL.B. and B.B.A. LL.B. enrolled students (3-member teams).",
+      "organizer": "Moot Court Society & Alliance School of Law",
+      "organizerDepartment": "Alliance School of Law",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "external",
+      "registrationUrl": "https://law.alliance.edu.in/moot-2026",
+      "registrationDeadline": "2026-04-14",
+      "prizePool": "₹1,20,000 + Supreme Court Clerkship Recommendation",
+      "openSpots": 30,
+      "totalRegistrations": 28,
+      "tags": [
+        "Law",
+        "Moot Court",
+        "Advocacy",
+        "Environment"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-drone-racing",
+      "title": "FPV Drone Grand Prix: Night Drone Obstacle Challenge",
+      "description": "Custom high-speed FPV racing quadcopters navigate through illuminated neon gates, chicane hoops, and 3D dive gates across the central lawn at night.",
+      "category": "Technical",
+      "startDatetime": "2026-05-02T18:30:00",
+      "endDatetime": "2026-05-02T22:30:00",
+      "venue": "Central Lawn Illuminated Sky Track",
+      "eligibility": "All licensed student drone pilots with 5-inch 4S/6S quads.",
+      "organizer": "Alliance Aero & Drone Guild",
+      "organizerDepartment": "Department of Aerospace Engineering",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-28",
+      "prizePool": "₹50,000 + FPV Goggles & Motors",
+      "openSpots": 20,
+      "totalRegistrations": 16,
+      "tags": [
+        "Drones",
+        "Aerospace",
+        "FPV Racing",
+        "Night Track"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "evt-green-run",
+      "title": "Alliance Campus 10K Green Marathon & Tree Drive",
+      "description": "Scenic sunrise 10K and 5K run through the wooded Anekal campus trails, with one sapling planted in the university forest sanctuary for every runner crossing the finish line.",
+      "category": "Sports",
+      "startDatetime": "2026-04-19T06:00:00",
+      "endDatetime": "2026-04-19T10:00:00",
+      "venue": "Main Gate Boulevard to Lakeside Woodland Loop",
+      "eligibility": "Open to all students, faculty, staff, and alumni.",
+      "organizer": "Rotaract Club of Alliance & Sports Council",
+      "verificationStatus": "Verified",
+      "publicationStatus": "Published",
+      "registrationType": "in-app",
+      "registrationDeadline": "2026-04-15",
+      "prizePool": "Commemorative Finisher Medals + Eco Hampers",
+      "openSpots": 500,
+      "totalRegistrations": 340,
+      "tags": [
+        "Marathon",
+        "Fitness",
+        "Sustainability",
+        "Campus Trail"
+      ],
+      "coverImage": "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "applications": [
+    {
+      "id": "app-1",
+      "opportunityId": "opp-1",
+      "opportunityTitle": "Alliance National Innovation Hackathon 2026",
+      "organizer": "Centre for Innovation & Incubation (CII)",
+      "category": "Hackathons",
+      "appliedDate": "2026-10-26",
+      "deadline": "2026-11-20",
+      "status": "Applied",
+      "notes": "Submitted team proposal under Team NeuroSync. Proposal shortlisted for phase 1 architecture review.",
+      "externalLink": "https://hackathon.alliance.edu.in",
+      "history": [
+        {
+          "status": "Saved",
+          "date": "2026-10-24",
+          "note": "Bookmarked after seeing campus notice board"
+        },
+        {
+          "status": "Applied",
+          "date": "2026-10-26",
+          "note": "Uploaded 5-page system architecture draft"
+        }
+      ]
+    },
+    {
+      "id": "app-2",
+      "opportunityId": "opp-3",
+      "opportunityTitle": "FinTech Platform Engineering Internship",
+      "organizer": "Zerodha Technology Labs",
+      "category": "Internships",
+      "appliedDate": "2026-10-22",
+      "deadline": "2026-11-25",
+      "status": "Shortlisted",
+      "notes": "Received round 1 online system design and concurrency test link. Scheduled for this Friday.",
+      "externalLink": "https://careers.zerodha.com",
+      "history": [
+        {
+          "status": "Applied",
+          "date": "2026-10-22",
+          "note": "Submitted via Alliance campus partner link"
+        },
+        {
+          "status": "Shortlisted",
+          "date": "2026-10-29",
+          "note": "Invited to 90-minute coding assessment"
+        }
+      ]
+    },
+    {
+      "id": "app-3",
+      "opportunityId": "opp-5",
+      "opportunityTitle": "Generative AI & LLM Systems Hands-on Masterclass",
+      "organizer": "Alliance Developer Student Club",
+      "category": "Workshops",
+      "appliedDate": "2026-10-20",
+      "deadline": "2026-11-10",
+      "status": "Selected",
+      "notes": "Seat confirmed in Lab 4! Received Google Cloud $100 student credit voucher.",
+      "externalLink": "https://adsc.alliance.edu.in",
+      "history": [
+        {
+          "status": "Applied",
+          "date": "2026-10-20"
+        },
+        {
+          "status": "Selected",
+          "date": "2026-10-23",
+          "note": "Voucher dispatched to student email"
+        }
+      ]
+    },
+    {
+      "id": "app-4",
+      "opportunityId": "opp-2",
+      "opportunityTitle": "Autonomous Drone Navigation Research Fellow",
+      "organizer": "Aerospace & Robotics Research Laboratory",
+      "category": "Research",
+      "appliedDate": "2026-10-28",
+      "deadline": "2026-11-15",
+      "status": "Saved",
+      "notes": "Need to upload updated transcript and recommenders before final submission.",
+      "externalLink": "https://aerolab.alliance.edu.in",
+      "history": [
+        {
+          "status": "Saved",
+          "date": "2026-10-28",
+          "note": "Drafting statement of interest"
+        }
+      ]
+    }
+  ],
+  "registrations": [
+    {
+      "id": "reg-01",
+      "studentId": "student-curr-01",
+      "studentName": "Shrikrushn Bhise",
+      "studentEmail": "shrikrushn.btech23@alliance.edu.in",
+      "eventId": "evt-one-hackasprint",
+      "eventTitle": "Midnight Hack-a-Sprint: 24h AI & Campus Infrastructure Build",
+      "festivalId": "fest-alliance-one",
+      "festivalTitle": "Alliance ONE 2026",
+      "category": "Technical",
+      "startDatetime": "2026-04-16T19:00:00",
+      "venue": "Edison Innovation Lab & Advanced Computing Hall",
+      "registrationStatus": "Confirmed",
+      "registeredAt": "2026-04-01T14:22:00",
+      "ticketCode": "AL-FEST-2026-8842"
+    },
+    {
+      "id": "reg-02",
+      "studentId": "student-curr-01",
+      "studentName": "Shrikrushn Bhise",
+      "studentEmail": "shrikrushn.btech23@alliance.edu.in",
+      "eventId": "evt-quantum-workshop",
+      "eventTitle": "Quantum Computing Hands-on with Qiskit & IBM Q Experience",
+      "category": "Workshop & Masterclass",
+      "startDatetime": "2026-04-11T09:30:00",
+      "venue": "Advanced Photonics & Quantum Lab, 3rd Floor Engineering Block",
+      "registrationStatus": "Confirmed",
+      "registeredAt": "2026-04-03T10:15:00",
+      "ticketCode": "AL-FEST-2026-3195"
+    }
+  ],
+  "teams": [
+    {
+      "id": "team-1",
+      "name": "Team NeuroSync",
+      "projectTitle": "Smart Campus Multimodal Assistant & Accessibility Suite",
+      "category": "Hackathons",
+      "targetOpportunityId": "opp-1",
+      "targetOpportunityTitle": "Alliance National Innovation Hackathon 2026",
+      "description": "We are engineering an ambient real-time vision and speech assistance app to assist visually impaired students navigate campus corridors, read physical notices, and transcribe lecture boards in real time.",
+      "leaderId": "student-shrikrushn-01",
+      "leaderName": "Shrikrushn Bhise",
+      "members": [
+        {
+          "studentId": "student-shrikrushn-01",
+          "name": "Shrikrushn Bhise",
+          "role": "Team Lead & AI Architect",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&h=256&q=80",
+          "department": "CSE - AI & ML"
+        },
+        {
+          "studentId": "student-4",
+          "name": "Priyanka Nambiar",
+          "role": "Lead UI/UX & Interaction Designer",
+          "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=256&h=256&q=80",
+          "department": "B.Des Interaction Design"
+        }
+      ],
+      "openPositions": [
+        {
+          "id": "pos-1",
+          "title": "Backend Systems & API Engineer",
+          "requiredSkills": [
+            "FastAPI",
+            "PostgreSQL",
+            "Docker"
+          ],
+          "commitmentHours": 12,
+          "status": "Open"
+        },
+        {
+          "id": "pos-2",
+          "title": "Edge Computer Vision Developer",
+          "requiredSkills": [
+            "Computer Vision",
+            "PyTorch",
+            "Python"
+          ],
+          "commitmentHours": 10,
+          "status": "Open"
+        }
+      ],
+      "requiredSkills": [
+        "Python",
+        "PyTorch",
+        "React",
+        "FastAPI",
+        "UI/UX Design",
+        "Computer Vision"
+      ],
+      "createdDate": "2026-10-24",
+      "status": "Recruiting"
+    },
+    {
+      "id": "team-2",
+      "name": "AeroGlide Autonomy Lab",
+      "projectTitle": "Vision-Language-Action Indoor GPS-Denied Quadrotor",
+      "category": "Research",
+      "targetOpportunityId": "opp-2",
+      "targetOpportunityTitle": "Autonomous Drone Navigation Research Fellow",
+      "description": "Forming a high-caliber cross-disciplinary squad to tackle autonomous corridor mapping and semantic landing spot detection without relying on external GPS signals.",
+      "leaderId": "student-5",
+      "leaderName": "Karthik Subramanian",
+      "members": [
+        {
+          "studentId": "student-5",
+          "name": "Karthik Subramanian",
+          "role": "Lead Autonomy Researcher",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&h=256&q=80",
+          "department": "Aerospace Engineering"
+        }
+      ],
+      "openPositions": [
+        {
+          "id": "pos-3",
+          "title": "Edge Vision & AI Systems Specialist",
+          "requiredSkills": [
+            "PyTorch",
+            "Computer Vision",
+            "Python",
+            "Linux"
+          ],
+          "commitmentHours": 15,
+          "status": "Open"
+        }
+      ],
+      "requiredSkills": [
+        "ROS2",
+        "Computer Vision",
+        "Python",
+        "C++",
+        "PyTorch"
+      ],
+      "createdDate": "2026-10-26",
+      "status": "Recruiting"
+    },
+    {
+      "id": "team-3",
+      "name": "FinPulse Venture Syndicate",
+      "projectTitle": "Campus Ledger: Zero-Fee Peer-to-Peer Micro-Credit Network",
+      "category": "Entrepreneurship",
+      "targetOpportunityId": "opp-4",
+      "targetOpportunityTitle": "Alliance Venture Studio Pitch Competition 2026",
+      "description": "Pitching an authorized regulatory-compliant revolving credit and bill-splitting platform for university campuses, with automated risk scoring based on academic and attendance stability.",
+      "leaderId": "student-2",
+      "leaderName": "Ananya Sharma",
+      "members": [
+        {
+          "studentId": "student-2",
+          "name": "Ananya Sharma",
+          "role": "Founder & Business Lead",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=256&h=256&q=80",
+          "department": "School of Business"
+        }
+      ],
+      "openPositions": [
+        {
+          "id": "pos-4",
+          "title": "Lead Full-Stack Web Engineer",
+          "requiredSkills": [
+            "React",
+            "TypeScript",
+            "PostgreSQL",
+            "FastAPI"
+          ],
+          "commitmentHours": 12,
+          "status": "Open"
+        }
+      ],
+      "requiredSkills": [
+        "Business Modeling",
+        "Product Strategy",
+        "React",
+        "Financial Projections",
+        "FastAPI"
+      ],
+      "createdDate": "2026-10-28",
+      "status": "Recruiting"
+    }
+  ],
+  "invitations": [
+    {
+      "id": "inv-1",
+      "teamId": "team-2",
+      "teamName": "AeroGlide Autonomy Lab",
+      "projectTitle": "Vision-Language-Action Indoor GPS-Denied Quadrotor",
+      "inviterId": "student-5",
+      "inviterName": "Karthik Subramanian",
+      "inviterAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=256&h=256&q=80",
+      "inviteeId": "student-shrikrushn-01",
+      "roleName": "Edge Vision & AI Systems Specialist",
+      "date": "2026-10-31",
+      "status": "Pending",
+      "message": "Hey Shrikrushn! We saw your AuraCampus and PyTorch work. Would love to have your deep learning expertise on our quadrotor SLAM pipeline!"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "user-student-01",
+      "roleTarget": "student",
+      "type": "opportunity",
+      "title": "New Research Fellowship Published",
+      "message": "Autonomous Rover Perception Fellowship is now open for CSE/AERO applicants.",
+      "read": false,
+      "link": "opportunities",
+      "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "id": "notif-2",
+      "userId": "user-student-01",
+      "roleTarget": "student",
+      "type": "event",
+      "title": "Alliance ONE 2026 Registrations Open",
+      "message": "Digital passes for Midnight Hack-a-Sprint and Battle of Bands are live.",
+      "read": false,
+      "link": "events",
+      "createdAt": "2026-04-02T14:30:00Z"
+    },
+    {
+      "id": "notif-3",
+      "userId": "user-organizer-01",
+      "roleTarget": "organizer",
+      "type": "application",
+      "title": "New Applicant for PulseMesh",
+      "message": "Shrikrushn Bhise applied for Frontend & Systems Specialist on PulseMesh Squad.",
+      "read": true,
+      "link": "organizer",
+      "createdAt": "2026-04-03T16:00:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-1793596916392-918",
+      "actorId": "user-student-01",
+      "actorName": "Shrikrushn Bhise",
+      "actorRole": "student",
+      "action": "SECURITY_ACCESS_DENIED",
+      "resourceType": "Endpoint",
+      "resourceId": "/api/users",
+      "details": "Attempted unauthorized access to /api/users. Required: admin, faculty. Actual: student.",
+      "timestamp": "2026-11-02T05:21:56.392Z"
+    },
+    {
+      "id": "audit-1",
+      "actorId": "user-admin-01",
+      "actorName": "Prof. Rajeshwara Rao",
+      "actorRole": "admin",
+      "action": "VERIFY_FESTIVAL",
+      "resourceType": "CampusFestival",
+      "resourceId": "fest-alliance-one",
+      "details": "Verified and published official festival calendar for Alliance ONE 2026.",
+      "timestamp": "2026-04-01T09:15:00Z"
+    },
+    {
+      "id": "audit-2",
+      "actorId": "user-admin-01",
+      "actorName": "Prof. Rajeshwara Rao",
+      "actorRole": "admin",
+      "action": "VERIFY_OPPORTUNITY",
+      "resourceType": "Opportunity",
+      "resourceId": "opp-1",
+      "details": "Verified Alliance National Innovation Hackathon 2026 under CED accreditation.",
+      "timestamp": "2026-04-02T11:20:00Z"
+    },
+    {
+      "id": "audit-3",
+      "actorId": "user-organizer-01",
+      "actorName": "Aditi Sharma",
+      "actorRole": "organizer",
+      "action": "CREATE_SUB_EVENT",
+      "resourceType": "CampusEvent",
+      "resourceId": "evt-one-hackasprint",
+      "details": "Submitted Midnight Hack-a-Sprint under Alliance ONE 2026 umbrella.",
+      "timestamp": "2026-04-03T15:45:00Z"
+    }
+  ],
+  "currentUserId": "user-student-01"
+}

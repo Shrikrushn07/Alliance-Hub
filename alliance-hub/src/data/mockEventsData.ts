@@ -1,0 +1,555 @@
+import { CampusFestival, CampusEvent, EventRegistration, FestivalAnnouncement } from '../types';
+
+export const INITIAL_FESTIVALS: CampusFestival[] = [
+  {
+    id: 'fest-alliance-one',
+    title: 'Alliance ONE 2026',
+    slug: 'alliance-one',
+    tagline: 'The Flagship Annual University Mega-Festival',
+    theme: 'Nexus of Horizons: Convergence of Art, Code & Kinetic Energy',
+    description: 'Alliance ONE is the definitive annual collegiate festival of Alliance University, uniting over 8,000 students across engineering, business, law, liberal arts, and science. Over three electrifying days, the campus transforms into a vibrant hub of national-level technical competitions, pro-nites, cultural showdowns, and inter-collegiate sports battles.',
+    heroImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1600&q=80',
+    organizer: 'Department of Student Affairs & Student Senate',
+    organizerDepartment: 'Office of Campus Life & Cultural Affairs',
+    startDate: '2026-04-16',
+    endDate: '2026-04-18',
+    venue: 'Central Amphitheatre, Sports Complex & Innovation Arena, Anekal Main Campus',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    featured: true,
+    expectedAttendees: 8500,
+    participatingClubs: [
+      'Alliance Cultural Committee',
+      'Rotaract Club of Alliance',
+      'Music & Performing Arts Society',
+      'IEEE Student Branch',
+      'Sports & Athletics Council',
+      'E-Cell Alliance'
+    ],
+    scheduleHighlights: [
+      {
+        day: 'Day 1 (Apr 16)',
+        title: 'Grand Inauguration & Thematic Prelims',
+        time: '09:30 AM - 09:00 PM',
+        description: 'Chancellor address, torch lighting ceremony, Western & Eastern dance preliminaries, and 24-hour Midnight Hack-a-Sprint kick-off.',
+        venue: 'Central Amphitheatre & Edison Computing Labs'
+      },
+      {
+        day: 'Day 2 (Apr 17)',
+        title: 'National Battle of Bands & Tech Arena Finals',
+        time: '10:00 AM - 10:30 PM',
+        description: 'Inter-university rock band clash, Robowars arena elimination bouts, and high-energy street dance battles.',
+        venue: 'Sports Pavilion & Open-Air Amphitheatre'
+      },
+      {
+        day: 'Day 3 (Apr 18)',
+        title: 'Celebrity Pro-Nite, Prize Gala & Valedictory',
+        time: '04:00 PM - 11:00 PM',
+        description: 'Grand award distribution of the ₹6,00,000 festival trophy pool followed by an exclusive headline musical performance.',
+        venue: 'Main University Stadium Grounds'
+      }
+    ],
+    announcements: [
+      {
+        id: 'ann-1',
+        festivalId: 'fest-alliance-one',
+        title: 'Battle of the Bands Slot Submissions Extended',
+        description: 'Due to overwhelming entries from across Bengaluru universities, band video submission deadline is extended to April 10 at 6:00 PM.',
+        publishedAt: '2026-04-02',
+        priority: 'High',
+        author: 'Cultural Council Coordinator'
+      },
+      {
+        id: 'ann-2',
+        festivalId: 'fest-alliance-one',
+        title: 'Midnight Hack-a-Sprint Cloud Credits Dispatched',
+        description: 'All 60 shortlisted developer squads have been sent AWS and Gemini API test credentials via registered Alliance University student email.',
+        publishedAt: '2026-04-04',
+        priority: 'Normal',
+        author: 'AITS Technical Lead'
+      }
+    ]
+  },
+  {
+    id: 'fest-alf-2026',
+    title: 'ALF — Alliance Literature Festival 2026',
+    slug: 'alf',
+    tagline: 'World Ideas, Provocative Thought & Creative Expression',
+    theme: 'Words in Motion: Narrative Power in the Age of Synthetic Intelligence',
+    description: 'The Alliance Literature Festival (ALF) stands as one of India’s premier academic literary celebrations, convening international Booker-winning authors, historians, investigative journalists, poet laureates, and student debaters under the green canopy of Alliance University.',
+    heroImage: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=80',
+    organizer: 'School of Liberal Arts & Humanities',
+    organizerDepartment: 'Department of Languages & Creative Writing',
+    startDate: '2026-05-08',
+    endDate: '2026-05-10',
+    venue: 'Green Amphitheatre, B-School Gazebos & Dr. C.G. Auditorium',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    featured: true,
+    expectedAttendees: 4200,
+    participatingClubs: [
+      'Alliance Literary Society',
+      'The Oratory Club',
+      'Philosophy & Cinema Circle',
+      'Booker Reading Circle'
+    ],
+    scheduleHighlights: [
+      {
+        day: 'Day 1 (May 8)',
+        title: 'Keynote Discourse: The Architecture of Memory',
+        time: '10:00 AM - 05:00 PM',
+        description: 'Opening panel with celebrated essayists and debate preliminaries on algorithmic literature.',
+        venue: 'Green Amphitheatre'
+      },
+      {
+        day: 'Day 2 (May 9)',
+        title: 'Spoken Word Gala & Authors Guild Salon',
+        time: '11:00 AM - 07:30 PM',
+        description: 'National collegiate poetry slam, indie book launches, and masterclass on literary translation.',
+        venue: 'Library Central Quadrangle'
+      },
+      {
+        day: 'Day 3 (May 10)',
+        title: 'The Great Parliamentary Debate Finals',
+        time: '10:30 AM - 04:00 PM',
+        description: 'Oxford-style debating championship followed by the valedictory address and student anthology release.',
+        venue: 'Dr. C.G. Auditorium'
+      }
+    ],
+    announcements: [
+      {
+        id: 'ann-alf-1',
+        festivalId: 'fest-alf-2026',
+        title: 'Student Anthology Submissions Open',
+        description: 'Short stories and poetry selections for the 2026 Alliance Anthology "Ink & Silicon" close on April 25.',
+        publishedAt: '2026-04-01',
+        priority: 'Normal',
+        author: 'Dr. Maya Sengupta, Faculty Advisor'
+      }
+    ]
+  },
+  {
+    id: 'fest-esummit-2026',
+    title: 'Alliance E-Summit & Global Conclave 2026',
+    slug: 'e-summit',
+    tagline: 'Empowering Student Founders & Venture Builders',
+    theme: 'Zero to One: Frontier Tech, Climate Capital & Deep Scale',
+    description: 'Hosted by the Alliance Entrepreneurship Cell (E-Cell) and the Incubation Center, the E-Summit brings together angel investors, venture capitalists, unicorn founders, and over 1,500 collegiate innovators for two days of pitch battles, product teardowns, and venture creation.',
+    heroImage: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1600&q=80',
+    organizer: 'E-Cell Alliance & Alliance Innovation Hub',
+    organizerDepartment: 'Alliance School of Business',
+    startDate: '2026-04-24',
+    endDate: '2026-04-25',
+    venue: 'Executive Seminar Hall & Innovation Centre, B-School Campus',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    featured: true,
+    expectedAttendees: 2000,
+    participatingClubs: [
+      'E-Cell Alliance',
+      'Finance & FinTech Syndicate',
+      'Alliance Consulting Club',
+      'AI Product Guild'
+    ],
+    scheduleHighlights: [
+      {
+        day: 'Day 1 (Apr 24)',
+        title: 'Venture Keynote & Seed Pitch Prelims',
+        time: '09:00 AM - 06:00 PM',
+        description: 'Keynotes by prominent Bengaluru tech founders and 3-minute quick pitches across 40 collegiate startups.',
+        venue: 'Executive Seminar Hall'
+      },
+      {
+        day: 'Day 2 (Apr 25)',
+        title: 'The Grand Angel Arena (Shark Tank Format)',
+        time: '10:00 AM - 05:30 PM',
+        description: 'Top 8 finalists pitch live before institutional investors with an instant ₹5,00,000 seed grant pool.',
+        venue: 'Innovation Centre Auditorium'
+      }
+    ],
+    announcements: [
+      {
+        id: 'ann-es-1',
+        festivalId: 'fest-esummit-2026',
+        title: 'VC Mentor Roster Revealed',
+        description: 'Partners from Blume Ventures, Peak XV Surge, and Kalaari Capital confirmed as judges for the Seed Pitch Bowl.',
+        publishedAt: '2026-04-03',
+        priority: 'High',
+        author: 'E-Cell Convener'
+      }
+    ]
+  },
+  {
+    id: 'fest-sports-2026',
+    title: 'Chidananda Hegde Memorial Sports Fest 2026',
+    slug: 'chidananda-sports-fest',
+    tagline: 'Excellence in Motion: Annual University Athletics & Games',
+    theme: 'Resilience, Sportsmanship & Athletic Mastery',
+    description: 'The prestigious annual inter-school and inter-collegiate sports festival featuring intense competitions across Track & Field, Football, Basketball, Cricket, Badminton, Volleyball, and Table Tennis with teams competing from 40+ universities across South India.',
+    heroImage: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1600&q=80',
+    organizer: 'Department of Physical Education & Sports Council',
+    organizerDepartment: 'Directorate of Sports & Wellness',
+    startDate: '2026-03-28',
+    endDate: '2026-03-30',
+    venue: 'Alliance University Sports Pavilion, Olympic Standard Track & Multipurpose Courts',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    featured: false,
+    expectedAttendees: 3000,
+    participatingClubs: [
+      'Alliance Football Club',
+      'Athletics & Marathon Guild',
+      'Hoopers Basketball Society',
+      'Martial Arts Club'
+    ]
+  },
+  {
+    id: 'fest-techvista-2026',
+    title: 'TechVista: Computing & Engineering Symposium 2026',
+    slug: 'techvista',
+    tagline: 'Frontier Systems, Autonomous Robotics & Machine Intelligence',
+    theme: 'Beyond Silicon: Quantum, Cyber Resilience & Edge Autonomous Systems',
+    description: 'The annual flagship engineering symposium curated by Alliance College of Engineering & Design and the IEEE Student Branch, featuring state-level robotics combat, cybersecurity CTF hackathons, and research paper presentations.',
+    heroImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80',
+    organizer: 'IEEE Alliance Student Branch & Robotics Club',
+    organizerDepartment: 'Alliance College of Engineering & Design',
+    startDate: '2026-05-15',
+    endDate: '2026-05-16',
+    venue: 'Edison Computing Block, Tech Park & Makerspace Lab',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    featured: false,
+    expectedAttendees: 1800,
+    participatingClubs: [
+      'IEEE Student Branch',
+      'Alliance Robotics Guild',
+      'Null Chapter Alliance (Cybersec)',
+      'Game Dev Society'
+    ]
+  }
+];
+
+export const INITIAL_CAMPUS_EVENTS: CampusEvent[] = [
+  // Sub-events of Alliance ONE
+  {
+    id: 'evt-one-soundclash',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    title: 'Sound Clash: National Battle of the Bands',
+    description: 'High-voltage collegiate rock, fusion, and indie bands duel on the main concert stage with full sound engineering support. Judged on originality, stage presence, and technical mastery.',
+    category: 'Cultural',
+    startDatetime: '2026-04-17T18:00:00',
+    endDatetime: '2026-04-17T22:00:00',
+    venue: 'Central Amphitheatre Main Stage',
+    eligibility: 'All verified undergraduate and postgraduate collegiate music bands (3-7 members).',
+    organizer: 'Alliance Cultural Committee',
+    organizerDepartment: 'Office of Campus Life',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-10',
+    prizePool: '₹1,00,000 + Studio Recording Contract',
+    openSpots: 12,
+    totalRegistrations: 9,
+    tags: ['Music', 'Live Bands', 'Rock', 'Performance'],
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80',
+    rulesOrGuidelines: [
+      'Performance time slot: 15 minutes + 5 minutes sound check',
+      'Original compositions score 25% bonus points in the judging rubric',
+      'Standard 5-piece drum kit and amplifiers provided by festival sound crew'
+    ]
+  },
+  {
+    id: 'evt-one-hackasprint',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    title: 'Midnight Hack-a-Sprint: 24h AI & Campus Infrastructure Build',
+    description: 'An overnight hack sprint where 60 teams build production-grade web applications, autonomous agent workflows, or university IoT solutions within 24 intense hours.',
+    category: 'Technical',
+    startDatetime: '2026-04-16T19:00:00',
+    endDatetime: '2026-04-17T19:00:00',
+    venue: 'Edison Innovation Lab & Advanced Computing Hall',
+    eligibility: 'Open to all Alliance University students across any department and batch.',
+    organizer: 'IEEE Student Branch & Google Developer Student Club',
+    organizerDepartment: 'Alliance College of Engineering & Design',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-12',
+    prizePool: '₹1,50,000 + Cloud Credits & Fast-Track Internship',
+    openSpots: 60,
+    totalRegistrations: 48,
+    tags: ['Hackathon', 'AI Agents', 'Full-Stack', 'IoT'],
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
+    rulesOrGuidelines: [
+      'Teams of 2 to 4 members. Cross-department teams encouraged.',
+      'All code commits must be pushed to a fresh GitHub repo during the sprint window.',
+      'Food, Red Bull, caffeine bar, and rest pods provided throughout the night.'
+    ]
+  },
+  {
+    id: 'evt-one-robowars',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    title: 'RoboClash: 15kg & 30kg Combat Robotics Arena',
+    description: 'Custom armored combat robots clash in a reinforced polycarbonate enclosure with spinning weapons, flippers, and wedge chassis. Knockout tournament format.',
+    category: 'Technical',
+    startDatetime: '2026-04-17T13:00:00',
+    endDatetime: '2026-04-17T17:00:00',
+    venue: 'Central Plaza Enclosed Battle Arena',
+    eligibility: 'College student teams with custom fabricated radio-controlled robots under 30kg.',
+    organizer: 'Alliance Robotics Guild',
+    organizerDepartment: 'Department of Mechanical & Mechatronics',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-11',
+    prizePool: '₹75,000 + Fabrication Grants',
+    openSpots: 16,
+    totalRegistrations: 14,
+    tags: ['Robotics', 'Hardware', 'Combat', 'Mechatronics'],
+    coverImage: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'evt-one-streetball',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    title: 'Alliance Slam: 3v3 Streetball Championship',
+    description: 'Fast-paced, FIBA 3x3 half-court basketball showdown under floodlights with live hip-hop beats by DJ student society.',
+    category: 'Sports',
+    startDatetime: '2026-04-16T17:00:00',
+    endDatetime: '2026-04-16T21:30:00',
+    venue: 'Outdoor Floodlit Basketball Courts',
+    eligibility: 'All enrolled undergraduate and postgraduate students.',
+    organizer: 'Sports & Athletics Council',
+    organizerDepartment: 'Directorate of Sports & Wellness',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-12',
+    prizePool: '₹30,000 + Championship Medals',
+    openSpots: 24,
+    totalRegistrations: 20,
+    tags: ['Basketball', 'Sports', 'Streetball', 'Fast-Paced'],
+    coverImage: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'evt-one-verve',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    title: 'Verve: Inter-School Thematic Choreography Gala',
+    description: 'Large-group Western, Indo-contemporary, and hip-hop dance teams showcase synchronization, thematic storytelling, and athletic choreography.',
+    category: 'Cultural',
+    startDatetime: '2026-04-18T16:00:00',
+    endDatetime: '2026-04-18T19:30:00',
+    venue: 'Central Amphitheatre Stage',
+    eligibility: 'Student dance troupes of 8 to 25 members.',
+    organizer: 'Alliance Dance & Choreography Syndicate',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-13',
+    prizePool: '₹80,000 Trophy',
+    openSpots: 10,
+    totalRegistrations: 8,
+    tags: ['Dance', 'Choreography', 'Stage', 'Cultural'],
+    coverImage: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80'
+  },
+
+  // Sub-events of ALF
+  {
+    id: 'evt-alf-debate',
+    festivalId: 'fest-alf-2026',
+    festivalTitle: 'ALF — Alliance Literature Festival 2026',
+    title: 'The Great Parliamentary Debate: Ethics of the Singularity',
+    description: 'British Parliamentary debating tournament examining intellectual autonomy, state regulation of foundational models, and academic ethics.',
+    category: 'Cultural',
+    startDatetime: '2026-05-09T10:00:00',
+    endDatetime: '2026-05-09T17:00:00',
+    venue: 'Law School Moot Court Hall 1',
+    eligibility: 'Open to all university debaters (2-person teams).',
+    organizer: 'The Oratory Club of Alliance',
+    organizerDepartment: 'School of Liberal Arts & Humanities',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-05-03',
+    prizePool: '₹40,000 + Rolling Trophy',
+    openSpots: 32,
+    totalRegistrations: 24,
+    tags: ['Debate', 'Oratory', 'Parliamentary', 'Philosophy'],
+    coverImage: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'evt-alf-poetry',
+    festivalId: 'fest-alf-2026',
+    festivalTitle: 'ALF — Alliance Literature Festival 2026',
+    title: 'Nocturne: Under-the-Stars Poetry Slam & Spoken Word',
+    description: 'An evocative acoustic evening of original poetry in English, Hindi, Kannada, and regional languages under the fairy-lit banyan grove.',
+    category: 'Cultural',
+    startDatetime: '2026-05-09T19:00:00',
+    endDatetime: '2026-05-09T22:00:00',
+    venue: 'Green Amphitheatre Lawn Gazebo',
+    eligibility: 'All students and staff of Alliance University.',
+    organizer: 'Alliance Literary Society',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-05-06',
+    prizePool: '₹20,000 + Publication in Anthology',
+    openSpots: 25,
+    totalRegistrations: 19,
+    tags: ['Poetry', 'Spoken Word', 'Literature', 'Acoustic'],
+    coverImage: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80'
+  },
+
+  // Sub-events of E-Summit
+  {
+    id: 'evt-esummit-pitch',
+    festivalId: 'fest-esummit-2026',
+    festivalTitle: 'Alliance E-Summit & Global Conclave 2026',
+    title: 'The Angel Arena: Live Seed Venture Pitch Bowl',
+    description: 'Top student venture teams pitch in front of active seed investors, angel syndicate leads, and venture partners for direct grant funding and term sheet offers.',
+    category: 'Entrepreneurship',
+    startDatetime: '2026-04-25T11:00:00',
+    endDatetime: '2026-04-25T16:30:00',
+    venue: 'Executive Seminar Hall & Innovation Centre',
+    eligibility: 'Collegiate startup teams with a working prototype or early revenue traction.',
+    organizer: 'E-Cell Alliance',
+    organizerDepartment: 'Alliance School of Business',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-18',
+    prizePool: '₹5,00,000 Equity-Free Seed Pool',
+    openSpots: 15,
+    totalRegistrations: 12,
+    tags: ['Startup', 'Pitch', 'Venture Capital', 'Funding'],
+    coverImage: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80'
+  },
+
+  // Standalone Campus Events & Workshops
+  {
+    id: 'evt-quantum-workshop',
+    title: 'Quantum Computing Hands-on with Qiskit & IBM Q Experience',
+    description: 'A 2-day hands-on intensive masterclass on qubit state vectors, entanglement, Grover search, and running circuits on physical superconducting quantum hardware.',
+    category: 'Workshop & Masterclass',
+    startDatetime: '2026-04-11T09:30:00',
+    endDatetime: '2026-04-12T16:30:00',
+    venue: 'Advanced Photonics & Quantum Lab, 3rd Floor Engineering Block',
+    eligibility: 'Linear algebra foundation and basic Python skills.',
+    organizer: 'Department of Computer Science & IBM Quantum Ambassador',
+    organizerDepartment: 'Alliance College of Engineering & Design',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-08',
+    openSpots: 40,
+    totalRegistrations: 38,
+    tags: ['Quantum', 'Python', 'Qiskit', 'Deep Tech'],
+    featured: true,
+    coverImage: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
+    rulesOrGuidelines: [
+      'Bring your own laptop with Python 3.10+ installed',
+      'IBM Quantum cloud API tokens will be distributed in Session 1'
+    ]
+  },
+  {
+    id: 'evt-moot-court',
+    title: 'All-India National Environmental Law Moot Court',
+    description: 'Prestigious national moot court competition focusing on international climate treaties, loss-and-damage mechanisms, and corporate ESG compliance.',
+    category: 'Department Fest',
+    startDatetime: '2026-04-20T09:00:00',
+    endDatetime: '2026-04-22T18:00:00',
+    venue: 'Alliance School of Law Ceremonial Moot Court Complex',
+    eligibility: 'B.A. LL.B. and B.B.A. LL.B. enrolled students (3-member teams).',
+    organizer: 'Moot Court Society & Alliance School of Law',
+    organizerDepartment: 'Alliance School of Law',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'external',
+    registrationUrl: 'https://law.alliance.edu.in/moot-2026',
+    registrationDeadline: '2026-04-14',
+    prizePool: '₹1,20,000 + Supreme Court Clerkship Recommendation',
+    openSpots: 30,
+    totalRegistrations: 28,
+    tags: ['Law', 'Moot Court', 'Advocacy', 'Environment'],
+    coverImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'evt-drone-racing',
+    title: 'FPV Drone Grand Prix: Night Drone Obstacle Challenge',
+    description: 'Custom high-speed FPV racing quadcopters navigate through illuminated neon gates, chicane hoops, and 3D dive gates across the central lawn at night.',
+    category: 'Technical',
+    startDatetime: '2026-05-02T18:30:00',
+    endDatetime: '2026-05-02T22:30:00',
+    venue: 'Central Lawn Illuminated Sky Track',
+    eligibility: 'All licensed student drone pilots with 5-inch 4S/6S quads.',
+    organizer: 'Alliance Aero & Drone Guild',
+    organizerDepartment: 'Department of Aerospace Engineering',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-28',
+    prizePool: '₹50,000 + FPV Goggles & Motors',
+    openSpots: 20,
+    totalRegistrations: 16,
+    tags: ['Drones', 'Aerospace', 'FPV Racing', 'Night Track'],
+    coverImage: 'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'evt-green-run',
+    title: 'Alliance Campus 10K Green Marathon & Tree Drive',
+    description: 'Scenic sunrise 10K and 5K run through the wooded Anekal campus trails, with one sapling planted in the university forest sanctuary for every runner crossing the finish line.',
+    category: 'Sports',
+    startDatetime: '2026-04-19T06:00:00',
+    endDatetime: '2026-04-19T10:00:00',
+    venue: 'Main Gate Boulevard to Lakeside Woodland Loop',
+    eligibility: 'Open to all students, faculty, staff, and alumni.',
+    organizer: 'Rotaract Club of Alliance & Sports Council',
+    verificationStatus: 'Verified',
+    publicationStatus: 'Published',
+    registrationType: 'in-app',
+    registrationDeadline: '2026-04-15',
+    prizePool: 'Commemorative Finisher Medals + Eco Hampers',
+    openSpots: 500,
+    totalRegistrations: 340,
+    tags: ['Marathon', 'Fitness', 'Sustainability', 'Campus Trail'],
+    coverImage: 'https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=800&q=80'
+  }
+];
+
+export const INITIAL_EVENT_REGISTRATIONS: EventRegistration[] = [
+  {
+    id: 'reg-01',
+    studentId: 'student-curr-01',
+    studentName: 'Shrikrushn Bhise',
+    studentEmail: 'shrikrushn.btech23@alliance.edu.in',
+    eventId: 'evt-one-hackasprint',
+    eventTitle: 'Midnight Hack-a-Sprint: 24h AI & Campus Infrastructure Build',
+    festivalId: 'fest-alliance-one',
+    festivalTitle: 'Alliance ONE 2026',
+    category: 'Technical',
+    startDatetime: '2026-04-16T19:00:00',
+    venue: 'Edison Innovation Lab & Advanced Computing Hall',
+    registrationStatus: 'Confirmed',
+    registeredAt: '2026-04-01T14:22:00',
+    ticketCode: 'AL-FEST-2026-8842'
+  },
+  {
+    id: 'reg-02',
+    studentId: 'student-curr-01',
+    studentName: 'Shrikrushn Bhise',
+    studentEmail: 'shrikrushn.btech23@alliance.edu.in',
+    eventId: 'evt-quantum-workshop',
+    eventTitle: 'Quantum Computing Hands-on with Qiskit & IBM Q Experience',
+    category: 'Workshop & Masterclass',
+    startDatetime: '2026-04-11T09:30:00',
+    venue: 'Advanced Photonics & Quantum Lab, 3rd Floor Engineering Block',
+    registrationStatus: 'Confirmed',
+    registeredAt: '2026-04-03T10:15:00',
+    ticketCode: 'AL-FEST-2026-3195'
+  }
+];

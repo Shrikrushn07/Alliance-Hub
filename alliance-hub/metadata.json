@@ -1,0 +1,6 @@
+{
+  "name": "Alliance Hub",
+  "description": "Intelligent campus opportunity discovery, team formation, and student portfolio ecosystem for Alliance University.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
